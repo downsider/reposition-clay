@@ -1,27 +1,27 @@
 services:
     hydrator:
-        class: Silktide\Reposition\Clay\Hydrator\ClayHydrator
+        class: Lexide\Reposition\Clay\Hydrator\ClayHydrator
         arguments:
             - "@entityFactory"
         calls:
             -
                 method: "setNormaliser"
                 arguments:
-                    - "@silktide_reposition.defaultNormaliser"
+                    - "@lexide_reposition.defaultNormaliser"
 
     metadataFactory:
-        class: Silktide\Reposition\Clay\Metadata\ClayMetadataFactory
+        class: Lexide\Reposition\Clay\Metadata\ClayMetadataFactory
 
     entityFactory:
-        class: Silktide\Reposition\Clay\Hydrator\EntityFactory
+        class: Lexide\Reposition\Clay\Hydrator\EntityFactory
         arguments:
-            - "@silktide_reposition.collectionFactory"
+            - "@lexide_reposition.collectionFactory"
 
-    silktide_reposition.defaultHydrator:
+    lexide_reposition.defaultHydrator:
         aliasOf: "@hydrator"
 
-    silktide_reposition.defaultMetadataFactory:
+    lexide_reposition.defaultMetadataFactory:
         aliasOf: "@metadataFactory"
 
-    silktide_reposition.defaultEntityFactory:
+    lexide_reposition.defaultEntityFactory:
         aliasOf: "@entityFactory"

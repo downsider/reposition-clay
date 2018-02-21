@@ -1,9 +1,10 @@
 <?php
 
-namespace Silktide\Reposition\Clay\Test\Metadata;
+namespace Lexide\Reposition\Clay\Test\Metadata;
 
-use Silktide\Reposition\Clay\Metadata\ClayMetadataFactory;
-use Silktide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\Clay\Metadata\ClayMetadataFactory;
+use Lexide\Reposition\Clay\Test\Metadata\TestEntity\TypeEntity;
+use Lexide\Reposition\Metadata\EntityMetadata;
 
 class ClayMetadataFactoryTest extends \PHPUnit_Framework_TestCase {
 
@@ -48,7 +49,7 @@ class ClayMetadataFactoryTest extends \PHPUnit_Framework_TestCase {
 
         return [
             [ // types
-                "Silktide\\Reposition\\Clay\\Test\\Metadata\\TestEntity\\TypeEntity",
+                TypeEntity::class,
                 [
                     "bool_prop" => ["type" => EntityMetadata::FIELD_TYPE_BOOL, "getter" => "getBoolProp", "setter" => "setBoolProp"],
                     "int_prop" => [$type => EntityMetadata::FIELD_TYPE_INT, "getter" => "getIntProp", "setter" => "setIntProp"],
@@ -67,4 +68,3 @@ class ClayMetadataFactoryTest extends \PHPUnit_Framework_TestCase {
     }
 
 }
- 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Silktide\Reposition\Clay\Hydrator;
+namespace Lexide\Reposition\Clay\Hydrator;
 
-use Silktide\Reposition\Collection\Collection;
-use Silktide\Reposition\Exception\HydrationException;
-use Silktide\Reposition\Hydrator\EntityFactoryInterface;
-use Silktide\Reposition\Normaliser\NormaliserInterface;
-use Silktide\Reposition\Hydrator\HydratorInterface;
+use Lexide\Reposition\Collection\Collection;
+use Lexide\Reposition\Exception\HydrationException;
+use Lexide\Reposition\Hydrator\EntityFactoryInterface;
+use Lexide\Reposition\Normaliser\NormaliserInterface;
+use Lexide\Reposition\Hydrator\HydratorInterface;
 
 /**
  *
@@ -51,7 +51,7 @@ class ClayHydrator implements HydratorInterface
     /**
      * @param array $data
      * @param array $options
-     * @return object
+     * @return object|array
      */
     protected function doHydrate(array $data, array $options = [])
     {

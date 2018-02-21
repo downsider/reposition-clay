@@ -1,8 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Clay\Test\Metadata\TestEntity;
-
-use Downsider\Clay\Model\ModelTrait;
+namespace Lexide\Reposition\Clay\Test\Metadata\TestEntity;
 
 class TypeEntity
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Silktide\Reposition\Clay\Metadata;
+namespace Lexide\Reposition\Clay\Metadata;
 
-use Downsider\Clay\Model\NameConverterTrait;
-use Silktide\Reposition\Exception\MetadataException;
-use Silktide\Reposition\Metadata\EntityMetadata;
-use Silktide\Reposition\Metadata\EntityMetadataFactoryInterface;
+use Lexide\Clay\Model\NameConverterTrait;
+use Lexide\Reposition\Exception\MetadataException;
+use Lexide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\Metadata\EntityMetadataFactoryInterface;
 
 class ClayMetadataFactory implements EntityMetadataFactoryInterface
 {

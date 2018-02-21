@@ -1,10 +1,10 @@
 <?php
 
-namespace Silktide\Reposition\Clay\Hydrator;
+namespace Lexide\Reposition\Clay\Hydrator;
 
-use Downsider\Clay\Model\ClassDiscriminatorTrait;
-use Silktide\Reposition\Collection\CollectionFactory;
-use Silktide\Reposition\Hydrator\EntityFactoryInterface;
+use Lexide\Clay\Model\ClassDiscriminatorTrait;
+use Lexide\Reposition\Collection\CollectionFactory;
+use Lexide\Reposition\Hydrator\EntityFactoryInterface;
 
 /**
  * EntityFactory
